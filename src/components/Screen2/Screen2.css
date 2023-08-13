@@ -1,0 +1,146 @@
+.parts-wrapper {
+  overscroll-behavior: none;
+  -ms-overflow-style: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.parts-wrapper .scroll-container {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.parts-wrapper .scroll-container .ghost {
+  width: 100vw;
+}
+
+.parts-wrapper .scroll-container .header-text {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  position: fixed;
+  width: 100%;
+  font-weight: 800;
+  top: 40px;
+  z-index: 10;
+}
+
+.parts-wrapper .imgs-container {
+  position: relative;
+  height: calc(100dvh - 80px);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 0px 10%;
+  background: #fff;
+}
+
+.parts-wrapper .imgs-container .imgs {
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0rem;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item {
+  position: relative;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item .img {
+  height: 40vh;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 5px solid;
+  border-color: #000 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item .img:hover {
+  border-color: #FF4742;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item .selected {
+  border-color: #FF4742;
+  /* background-color: #FF4742; */
+}
+
+.parts-wrapper .imgs-container .imgs .selected {
+  /* border-color: #FF4742; */
+  background-color: #FF4742;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item .check-box {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: #08363a 62;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .img-item .check-box .check {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.parts-wrapper .imgs-container .imgs .img-wrapper .title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+
+}
+
+.parts-wrapper .btn-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+
+.parts-wrapper .btn-next .btn-assemble {
+  background: #FF4742;
+  border: 3px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  padding: 15px 50px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.parts-wrapper .btn-next .btn-assemble:hover {
+  background-color: white;
+  color: #FF4742;
+
+}

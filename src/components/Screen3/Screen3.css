@@ -1,0 +1,138 @@
+.assemble-wrapper {
+  width: 100%;
+  height: calc(100dvh - 80px);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.assemble-wrapper .header-text {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF4742;
+  font-size: 1.5rem;
+  z-index: 10;
+  font-weight: 800;
+}
+
+.assemble-wrapper .assemble {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  color: #FF4742;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.assemble-wrapper .assemble .left {
+  width: 25%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  overflow-y: scroll;
+  gap: 20px;
+  border-radius: 5px;
+  border: 3px solid #FF4742;
+}
+
+.assemble-wrapper .assemble .left::-webkit-scrollbar {
+  display: none;
+}
+
+.assemble-wrapper .assemble .left .item {
+  width: 100%;
+  aspect-ratio: 1.3333333333;
+  object-fit: cover;
+  cursor: grab;
+  transition: all 0.2s ease-in-out;
+  border: 5px solid #00e5ff 0;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+/* .assemble-wrapper .assemble .left .item:hover {
+  border: 5px solid #ff2600;
+} */
+
+.assemble-wrapper .assemble .left .item:active {
+  cursor: grabbing;
+}
+
+.assemble-wrapper .assemble .right {
+  height: 100%;
+  width: 75%;
+  border-radius: 5px;
+  border: 3px solid #FF4742;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.assemble-wrapper .assemble .right .img-child {
+  position: relative;
+}
+
+.assemble-wrapper .assemble .right .img-child .draggedItem {
+  height: 149px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.assemble-wrapper .assemble .right .img-child .cross {
+  background: #FF4742;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -7px;
+  right: -7px;
+  color: #fff;
+  font-size: 1.3rem;
+  z-index: 30;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.assemble-wrapper .assemble .border {
+  border: 5px solid #FF4742;
+}
+
+.assemble-wrapper .btn-next {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.assemble-wrapper .btn-next .btn-assemble {
+  background: #FF4742;
+  border: 3px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  padding: 15px 50px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.assemble-wrapper .btn-next .btn-assemble:hover {
+  background-color: white;
+  color: #FF4742;
+}
