@@ -1,8 +1,8 @@
+import five from '../assets/imgs/5.jpg';
 import one from '../assets/imgs/1.jpg';
 import two from '../assets/imgs/2.jpg';
 import three from '../assets/imgs/3.jpg';
 import four from '../assets/imgs/4.jpg';;
-import five from '../assets/imgs/5.jpg';
 
 const data = [
   {
